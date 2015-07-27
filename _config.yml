@@ -1,0 +1,7 @@
+# Site settings
+title: cowley05 
+github_username: cowley05 
+
+# Build settings
+markdown: kramdown
+highlighter: pygments
