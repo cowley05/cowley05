@@ -1,6 +1,7 @@
 ---
 layout: post
-title:  "test"
+title:  "Finding production bugs"
+summary: "How to configure your system to allow you to effectively find and fix bugs in a production environment."
 date:   2015-07-27 15:08:12
 categories: jekyll update
 ---
