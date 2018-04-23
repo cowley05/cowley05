@@ -12,8 +12,22 @@ pipeline {
       }
     }
     stage('deploy Test') {
+      parallel {
+        stage('deploy Test') {
+          steps {
+            echo 'test deployed succesfully'
+          }
+        }
+        stage('') {
+          steps {
+            sh 'exit 1'
+          }
+        }
+      }
+    }
+    stage('hmmm') {
       steps {
-        echo 'test deployed succesfully'
+        echo 'blah'
       }
     }
   }
