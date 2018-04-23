@@ -11,11 +11,6 @@ pipeline {
         echo 'tests all passed'
       }
     }
-    stage('approval') {
-      timeout(time: 120, unit: 'SECONDS') {
-        input message: 'Approve deployment?'
-      }
-    }
     stage('deploy Test') {
       parallel {
         stage('deploy Test') {
